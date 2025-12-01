@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Env / secrets
+.env
+.env.*
+
+# Local DB / runtime artifacts
+database.sqlite
+data.db
+server.log
+
+# Build / dist
+dist/
+build/
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
