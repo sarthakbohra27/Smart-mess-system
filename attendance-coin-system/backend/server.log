@@ -1,0 +1,19 @@
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Server is running on port 3000
+Health check: http://localhost:3000/health
+Connected to SQLite database
+Registration error: Error: SQLITE_ERROR: no such table: users
+--> in Database#get('SELECT id FROM users WHERE username = ? OR email = ?', [ 'test1', 'test1@example.com' ], [Function (anonymous)])
+    at /Applications/Attendence/attendance-coin-system/backend/db.js:35:12
+    at new Promise (<anonymous>)
+    at getOne (/Applications/Attendence/attendance-coin-system/backend/db.js:34:12)
+    at /Applications/Attendence/attendance-coin-system/backend/routes/auth.js:47:36
+    at Layer.handleRequest (/Applications/Attendence/attendance-coin-system/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/Applications/Attendence/attendance-coin-system/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Applications/Attendence/attendance-coin-system/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/Applications/Attendence/attendance-coin-system/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Applications/Attendence/attendance-coin-system/backend/node_modules/router/lib/layer.js:152:17) {
+  errno: 1,
+  code: 'SQLITE_ERROR',
+  __augmented: true
+}
